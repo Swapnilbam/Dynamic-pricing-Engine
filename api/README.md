@@ -1,6 +1,6 @@
 # ⚡ API Backend (FastAPI)
 
-This folder contains the FastAPI application that serves our trained Machine Learning model (`demand_model.joblib`). It takes real-time market conditions as input and returns the mathematically optimized price point to maximize revenue.
+This folder contains the FastAPI application that serves our trained Machine Learning model. It dynamically loads `demand_model.joblib` from the `models/` directory, takes real-time market conditions as input, and returns the mathematically optimized price point.
 
 ## How to Run Locally
 
