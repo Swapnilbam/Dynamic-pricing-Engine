@@ -14,4 +14,5 @@ This is a Machine Learning capstone project focused on maximizing e-commerce rev
 * Python
 * Pandas & NumPy
 * Scikit-Learn
-* FastAPI (Upcoming)
+* FastAPI
+* Streamlit
