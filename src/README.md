@@ -1,23 +1,11 @@
-# Dynamic Pricing Optimization Engine 🚀
+# ⚙️ Source: Core Logic & Simulations
 
-**A Machine Learning Capstone Project**
+This folder contains the raw Python scripts responsible for executing the Data Science and mathematical operations. 
 
-This project is an AI-driven pricing engine designed for e-commerce. It uses historical sales data, competitor pricing, and demand forecasting to calculate the absolute optimal price point that maximizes overall revenue.
+## Core Files
+* `optimize_price.py`: Contains the `optimize_pricing()` function. This function uses a brute-force iterative simulation, wrapping test variables in Pandas DataFrames, to predict demand across a spectrum of possible prices ($20 - $80). It mathematically calculates which price yields the highest total revenue (Price * Demand).
 
-## 🏗️ Current Architecture (`src/` folder)
-
-Currently, the core Machine Learning and optimization logic is complete:
-
-* **`data_generator.py`**: A simulator that generates a synthetic e-commerce dataset, hardcoding hidden economic rules like price elasticity and competitor effects.
-* **`train_model.py`**: The predictive engine. It uses a Linear Regression model to analyze the synthetic data, successfully reverse-engineering the hidden mathematical rules with a high R-squared accuracy.
-* **`optimize_price.py`**: The prescriptive engine. It simulates thousands of pricing scenarios against the trained ML model to output the exact price that will yield the maximum projected revenue.
-
-## ⚙️ How to Run Locally
-
-1. Clone this repository.
-2. Create a virtual environment and install the required dependencies (pandas, scikit-learn, joblib).
-3. Run the scripts sequentially:
-   ```bash
-   python src/data_generator.py
-   python src/train_model.py
-   python src/optimize_price.py
+## Usage
+This file is designed with a dual-purpose architecture:
+1. **As a Library:** It is safely imported into `api/main.py` without executing standalone code.
+2. **As a Script:** It contains an `if __name__ == "__main__":` execution block, allowing developers to run dry-run simulations directly in the terminal without booting up the web servers.
