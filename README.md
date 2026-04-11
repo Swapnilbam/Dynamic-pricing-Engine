@@ -25,3 +25,5 @@ Because this application relies on a decoupled architecture, you must run the Ba
 3. Start the FastAPI server:
    ```bash
    uvicorn api.main:app --reload
+
+### Built by Swapnil Bam
